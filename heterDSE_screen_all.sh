@@ -1,0 +1,11 @@
+screen -LdmS HeterDSE_pc_m_15_n20_id0 python SOTA_explore.py HeterDSE_pc_m 0 20
+screen -LdmS HeterDSE_pc_m_15_n20_id1 python SOTA_explore.py HeterDSE_pc_m 1 20
+screen -LdmS HeterDSE_pc_m_15_n20_id2 python SOTA_explore.py HeterDSE_pc_m 2 20
+screen -LdmS HeterDSE_pc_m_15_n20_id3 python SOTA_explore.py HeterDSE_pc_m 3 20
+screen -LdmS HeterDSE_pc_m_15_n20_id4 python SOTA_explore.py HeterDSE_pc_m 4 20
+screen -LdmS HeterDSE_pc_m_15_n16_id0 python SOTA_explore.py HeterDSE_pc_m 0 16
+screen -LdmS HeterDSE_pc_m_15_n16_id1 python SOTA_explore.py HeterDSE_pc_m 1 16
+screen -LdmS HeterDSE_pc_m_15_n16_id2 python SOTA_explore.py HeterDSE_pc_m 2 16
+screen -LdmS HeterDSE_pc_m_15_n16_id3 python SOTA_explore.py HeterDSE_pc_m 3 16
+screen -LdmS HeterDSE_pc_m_15_n16_id4 python SOTA_explore.py HeterDSE_pc_m 4 16
+screen -LdmS HeterDSE_pc_m_15_n23_id0 python SOTA_explore.py HeterDSE_pc_m 0 23

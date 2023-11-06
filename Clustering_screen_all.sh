@@ -1,0 +1,11 @@
+screen -LdmS Clustering_15_n16_id0 python SOTA_explore.py BruteForce 0 16
+screen -LdmS Clustering_15_n16_id1 python SOTA_explore.py BruteForce 1 16
+screen -LdmS Clustering_15_n16_id2 python SOTA_explore.py BruteForce 2 16
+screen -LdmS Clustering_15_n16_id3 python SOTA_explore.py BruteForce 3 16
+screen -LdmS Clustering_15_n16_id4 python SOTA_explore.py BruteForce 4 16
+screen -LdmS Clustering_15_n20_id0 python SOTA_explore.py BruteForce 0 20
+screen -LdmS Clustering_15_n20_id1 python SOTA_explore.py BruteForce 1 20
+screen -LdmS Clustering_15_n20_id2 python SOTA_explore.py BruteForce 2 20
+screen -LdmS Clustering_15_n20_id3 python SOTA_explore.py BruteForce 3 20
+screen -LdmS Clustering_15_n20_id4 python SOTA_explore.py BruteForce 4 20
+screen -LdmS Clustering_15_n23_id0 python SOTA_explore.py BruteForce 0 23

@@ -1,16 +1,32 @@
-### Hi there 👋
+# HetDSE
 
-<!--
-**hetdse/HetDSE** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Table of Contents
 
-Here are some ideas to get you started:
+- [Background](#background)
+- [Install](#install)
+- [Usage](#usage)
+- [Maintainers](#maintainers)
+- [License](#license)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Background
+HetDSE is a heterogeneous multi-core CPU design space exploration framework.
+
+## Install
+
+This project uses torch, skopt, math, and several basic python package. Go check them out if you don't have them locally installed.
+
+## Usage
+
+This is only a documentation package.
+
+```sh
+# run main() in SOTA_explore.py
+$ python SOTA_explore.py
+$ python SOTA_explore.py BruteForce 0 16
+```
+
+## Maintainers
+[@hetdse](https://github.com/hetdse/HetDSE).
+
+## License
+[MIT](license)
