@@ -1,33 +1,3 @@
-# spec06-int * 2, fp *2
-# case_name = "403.2-ref-1"
-# case_name = "437.1-ref-10"
-# case_name = "471.1-ref-1"
-# case_name = "453.1-ref-16"
-
-# spec17-int * 9
-# case_name = "500.1-refrate-1"
-# case_name = "502.1-refrate-1" ### not ready
-# case_name = "505.1-refrate-1"
-# case_name = "523.1-refrate-1"
-# case_name = "525.1-refrate-1"
-# case_name = "531.1-refrate-1"
-# case_name = "541.1-refrate-1"
-# case_name = "548.1-refrate-1"
-# case_name = "557.1-refrate-1"
-# spec17-fp * 13
-# case_name = "503.1-refrate-1"
-# case_name = "507.1-refrate-1"
-# case_name = "508.1-refrate-1"
-# case_name = "510.1-refrate-1"
-# case_name = "511.1-refrate-1"
-# case_name = "519.1-refrate-1"
-# case_name = "521.1-refrate-1"
-# case_name = "526.1-refrate-1"
-# case_name = "527.1-refrate-1"
-# case_name = "538.1-refrate-1"
-# case_name = "544.1-refrate-1"
-# case_name = "549.1-refrate-1"
-# case_name = "554.1-refrate-1"
 import copy
 import random
 
@@ -40,71 +10,38 @@ hostname = socket.getfqdn(socket.gethostname())
 print(f"hostname={hostname}")
 smoke_test = False
 host_tag = ''
-if 'BF-202106011024' in hostname \
-    or 'DESKTOP-A4P9S3E' in hostname \
-    or 'SC-202005121725' in hostname :
-    host_tag = '-BF'
-elif 'gtl' in hostname:
-    host_tag = '-gtl'
 
 case_names = [
     "500.1-refrate-1",
-    "502.2-refrate-1",
+    #"502.2-refrate-1",
     "503.1-refrate-1",
-    "505.1-refrate-1",
-    "507.1-refrate-1",  # not coverage, last_predict has high effect
-    "508.1-refrate-1",
-    "510.1-refrate-1",
-    "511.1-refrate-1",
-    "519.1-refrate-1",  # pareto is straight strange
-    "520.1-refrate-1",
-    "521.1-refrate-1",  # pareto is straight strange
-    "523.1-refrate-1",  # pareto non-uniform interval is easy to stuck
-    "525.1-refrate-1",
-    "526.1-refrate-1",
-    "527.1-refrate-1",
-    "531.1-refrate-1",  # pareto is straight strange
-    "538.1-refrate-1",
-    "541.1-refrate-1",
-    "544.1-refrate-1",
-    "548.1-refrate-1",
-    "549.1-refrate-1",
-    "554.1-refrate-1",
-    "557.1-refrate-1",
-    #'gmean',
-]
-
-case_names2 = [
-    "500.1-refrate-1",
-    "502.2-refrate-1",
-    "503.1-refrate-1",
-    "505.1-refrate-1",
-    "507.1-refrate-1",  # not coverage, last_predict has high effect
-    "508.1-refrate-1",
-    "510.1-refrate-1",
-    "511.1-refrate-1",
-    "519.1-refrate-1",  # pareto is straight strange
-    "520.1-refrate-1",
-    "521.1-refrate-1",  # pareto is straight strange
+    #"505.1-refrate-1",
+    #"507.1-refrate-1",  # not coverage, last_predict has high effect
+    #"508.1-refrate-1",
+    #"510.1-refrate-1",
+    #"511.1-refrate-1",
+    #"519.1-refrate-1",  # pareto is straight strange
+    #"520.1-refrate-1",
+    #"521.1-refrate-1",  # pareto is straight strange
     #"523.1-refrate-1",  # pareto non-uniform interval is easy to stuck
-    "525.1-refrate-1",
-    "526.1-refrate-1",
-    "527.1-refrate-1",
-    "531.1-refrate-1",  # pareto is straight strange
-    "538.1-refrate-1",
-    "541.1-refrate-1",
-    "544.1-refrate-1",
-    "548.1-refrate-1",
+    #"525.1-refrate-1",
+    #"526.1-refrate-1",
+    #"527.1-refrate-1",
+    #"531.1-refrate-1",  # pareto is straight strange
+    #"538.1-refrate-1",
+    #"541.1-refrate-1",
+    #"544.1-refrate-1",
+    #"548.1-refrate-1",
     #"549.1-refrate-1",
     #"554.1-refrate-1",
-    "557.1-refrate-1",
+    #"557.1-refrate-1",
 ]
 
 import sys
 if 3 < len(sys.argv):
     N_DOMAIN = int(sys.argv[3])
 else:
-    N_DOMAIN = 1
+    N_DOMAIN = 2
     #N_DOMAIN = 10
     # case_names = ["523.1-refrate-1", '549.1-refrate-1']
     #N_DOMAIN = len(case_names)

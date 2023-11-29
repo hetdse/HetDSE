@@ -1,0 +1,38 @@
+[1, 1] 
+schedule_mode = EER 
+origin_core_space_size #= 37 
+selected_core_space_size #= 3 
+core_space #= 3 
+[array([1, 0, 0, 1, 0, 0, 1, 1, 2, 1]), array([2, 1, 0, 1, 0, 0, 1, 1, 2, 2]), array([3, 1, 0, 2, 0, 0, 1, 1, 2, 3])] 
+hmp_configs = 
+{'Core-0': 5} 0.01196613 0.020648351126000004 
+{'Core-1': 4} 0.01049372 0.021241231240799997 
+{'Core-2': 3} 0.00859629 0.025901008792800002 
+core_type_num <= 1: best_each_core_space = [[3 1 0 2 0 0 1 1 2 3]] 
+core_type_num <= 1: best_hmp = {'Core-2': 3} 
+core_type_num <= 1: best_core_types = ['Core-2'] 
+{'Core-0': 4, 'Core-1': 1} 0.01196613 0.020648351126000004 
+{'Core-0': 2, 'Core-1': 2} 0.01196613 0.020648351126000004 
+{'Core-0': 1, 'Core-1': 3} 0.01049372 0.0215015067172 
+{'Core-0': 4, 'Core-2': 1} 0.01196613 0.020648351126000004 
+{'Core-0': 2, 'Core-2': 2} 0.01196613 0.020648351126000004 
+{'Core-1': 3, 'Core-2': 1} 0.01049372 0.021241231240799997 
+{'Core-1': 1, 'Core-2': 2} 0.00859629 0.024143304918700002 
+core_type_num <= 2: best_each_core_space = [[2 1 0 1 0 0 1 1 2 2]
+ [3 1 0 2 0 0 1 1 2 3]] 
+core_type_num <= 2: best_hmp = {'Core-1': 1, 'Core-2': 2} 
+core_type_num <= 2: best_core_types = ['Core-1', 'Core-2'] 
+{'Core-0': 2, 'Core-1': 1, 'Core-2': 1} 0.01196613 0.020648351126000004 
+{'Core-0': 1, 'Core-1': 2, 'Core-2': 1} 0.01049372 0.0215015067172 
+{'Core-0': 1, 'Core-1': 1, 'Core-2': 2} 0.01049372 0.0215015067172 
+core_type_num <= 3: best_each_core_space = [[2 1 0 1 0 0 1 1 2 2]
+ [3 1 0 2 0 0 1 1 2 3]] 
+core_type_num <= 3: best_hmp = {'Core-1': 1, 'Core-2': 2} 
+core_type_num <= 3: best_core_types = ['Core-1', 'Core-2'] 
+hmp_configs # = 13 
+hmp_configs_num_list = [3, 7, 3] 
+hmp_configs_num_pareto_filter = 20 
+hmp_configs_num_before_pareto_filter = 20 + 13 => 33 
+time_used = 0:00:14 
+best_hmp = {'Core-1': 1, 'Core-2': 2} 
+best_core_types = ['Core-1', 'Core-2'] 

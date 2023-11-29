@@ -103,7 +103,7 @@ if __name__ == '__main__':
             SOTA = 'BruteForce'
             #SOTA = 'GA'
             #SOTA = 'SA'
-            SOTA = 'SA_pc'
+            #SOTA = 'SA_pc'
             #SOTA = 'HeterDSE'
             #SOTA = 'HeterDSE_pc'
             #SOTA = 'HeterDSE_pc_m'
@@ -118,8 +118,8 @@ if __name__ == '__main__':
         #for selection in ['Hetsel-kmeans']:
         #for selection in ['Hetsel-clique']:
         #for selection in ['Random','Hetsel-sort']:
-        for selection in ['Hetsel-sort5']:
-        #for selection in [None]:
+        #for selection in ['Hetsel-sort5']:
+        for selection in [None]:
         #for selection in ['Hetsel-rank2']:
             #core_space_tag = 'C_1'
             #core_space_tag = 'C_2'
@@ -138,14 +138,14 @@ if __name__ == '__main__':
                 #selection = 'Random'
                 target_core_num = 30
             elif '_pareto' in core_space_tag:
-                core_space_tag = ''
+                #core_space_tag = ''
                 #selection = None
                 #selection = 'kmeans'
                 #selection = 'kmeansy'
                 #selection = 'kmeansy-scale'
                 #selection = 'LUCIE'
-                #selection = 'Clustering'
-                target_core_num = 30
+                selection = 'Clustering'
+                target_core_num = 3
 
             #if 5 != EVALUATION_INDEX:
             #    sche_evaluation_index_list = [0,EVALUATION_INDEX,5]
@@ -176,7 +176,8 @@ if __name__ == '__main__':
                     if 5 < len(sys.argv):
                         exp_info_list = [int(sys.argv[5])]
                     else:
-                        exp_info_list = [0, 1, 2, 3, 4]
+                        #exp_info_list = [0, 1, 2, 3, 4]
+                        exp_info_list = [0]                        
                 for exp_info in exp_info_list:
                     core_space, core_space_metrics = get_core_space(core_space_tag,
                                                                     program_queue=program_queue,

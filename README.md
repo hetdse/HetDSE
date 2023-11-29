@@ -21,8 +21,9 @@ This is only a documentation package.
 
 ```sh
 # run main() in SOTA_explore.py
+# default is Clustering
 $ python SOTA_explore.py
-$ python SOTA_explore.py BruteForce 0 16
+# more settings in SOTA_explore.py
 ```
 
 ## Maintainers

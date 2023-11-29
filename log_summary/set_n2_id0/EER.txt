@@ -1,0 +1,6 @@
+                                                                                                name   hmp_time hmp_energy         ED  time_used        hostname 
+                                             BruteForce_EER_C_pareto_AC0_EI2_EX0_sel-Clustering-3_pf    0.00860    0.02414    0.00021         16 SC-202005121725 
+                                             BruteForce_EER_C_pareto_AC0_EI2_EX1_sel-Clustering-3_pf    0.00897    0.02440    0.00022         15 SC-202005121725 
+                                             BruteForce_EER_C_pareto_AC0_EI2_EX2_sel-Clustering-3_pf    0.00948    0.02499    0.00024         11 SC-202005121725 
+                                             BruteForce_EER_C_pareto_AC0_EI2_EX3_sel-Clustering-3_pf    0.00942    0.02279    0.00021          9 SC-202005121725 
+                                             BruteForce_EER_C_pareto_AC0_EI2_EX0_sel-Clustering-3_pf    0.00860    0.02414    0.00021         14 SC-202005121725 
